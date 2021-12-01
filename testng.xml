@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.teqsar.Listners.ListenerClass" />
+		<!-- <listener class-name="com.teqsar.Listners.MethodInterceptor" /> -->
+		<listener
+			class-name="com.teqsar.Listners.AnnotationTransformer" />
+
+	</listeners>
+	<test thread-count="1" name="Test">
+		<classes>
+			<!-- <class name="com.teqsar.test.OranegHRMLoginTest" /> -->
+			<!-- <class name="com.teqsar.test.LoginPage" /> <class name="com.teqsar.test.AmazonTest" 
+				/> -->
+			<!-- <class name="com.teqsar.test.WebTableToSpreedsheet" /> -->
+
+			<!-- <class name="com.teqsar.test.GrayHRTest" /> -->			<!-- <class name="com.teqsar.test.HomePage"/> <class name="com.teqsar.test.BaseTest"/> -->
+			<class name="com.teqsar.test.AgentUserLoginTest" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
