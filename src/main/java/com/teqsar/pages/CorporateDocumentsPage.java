@@ -10,12 +10,18 @@ import com.teqsar.reports.ExtentLogger;
 
 public class CorporateDocumentsPage extends BasePage {
 	private final By clickProfofIdentity =By.xpath("//p[contains(text(),'Proof of Identity')]");
+	private final By clickProfofBusiness =By.xpath("//p[contains(text(),'Proof of Business')]");
+
 	private final By clickOnaddDocuments=By.xpath("(//span[@class='fa fa-xs fa-plus ng-scope'])[1]");
 	private final By passingdocuments=By.xpath("//input[@class='lf-ng-md-file-input-tag ng-scope']");
 	private final By documenType=By.xpath("//md-select[@name='documentType']");
 	private final By docTypeNationalID=By.xpath("//div[contains(text(),'NID-CORPORATE')]");
+	private final By docTypeTradeLicenceDoc=By.xpath("//div[contains(text(),'Trade License document')]");
+	private final By docTypeTINCertificate=By.xpath("//div[contains(text(),'TIN Certificate')]");
 	private final By enterDocumentId=By.xpath("//input[@name='documentNoRequired']");
-	private final By enterIssueDate=By.xpath("//span[contains(text(),'Issue Date')]");
+	//private final By enterIssueDate=By.xpath("//span[contains(text(),'Issue Date')]");
+	private final By enterIssueDate=By.xpath("(//input[@class=\"md-input\"])[1]");
+	private final By enterExpiryDate=By.xpath("(//input[@class=\"md-input\"])[1]");
 	private final By enterIssueAuthority=By.xpath("//input[@name=\"issuingAuthorityRequired\"]");
 	private final By clickOnDocCheckBox=By.xpath("//md-checkbox[@name=\"isDocVerified\"]");
 	private final By clickOnDocumentSubmit=By.xpath("//button[@class='mfs-template-btns mfs-template-main-btn mfs-modal-submit-btn md-button ng-scope md-ink-ripple']");
@@ -26,6 +32,12 @@ public class CorporateDocumentsPage extends BasePage {
 		Thread.sleep(5000);
 		click(clickProfofIdentity, WaitStrategry.PRESENCE, "clickProfofIdentity");
 		ExtentLogger.pass("Clicked on clickProfofIdentity", false);
+		return this;
+	}
+	public CorporateDocumentsPage clickProfofBusiness() throws Exception {
+		Thread.sleep(5000);
+		click(clickProfofBusiness, WaitStrategry.PRESENCE, "clickProfofBusiness");
+		ExtentLogger.pass("Clicked on clickProfofBusiness", false);
 		return this;
 	}
 	public CorporateDocumentsPage clickOnaddDocuments() throws Exception {
@@ -54,14 +66,30 @@ public class CorporateDocumentsPage extends BasePage {
 		ExtentLogger.pass("Clicked on docTypeNationalID", false);
 		return this;
 	}
+	public CorporateDocumentsPage docTypeTradeLicenceDoc() throws Exception {
+		click(docTypeTradeLicenceDoc, WaitStrategry.PRESENCE, "docTypeTradeLicenceDoc");
+		ExtentLogger.pass("Clicked on docTypeTradeLicenceDoc", false);
+		return this;
+	}
+	public CorporateDocumentsPage docTypeTINCertificate() throws Exception {
+		click(docTypeTINCertificate, WaitStrategry.PRESENCE, "docTypeTINCertificate");
+		ExtentLogger.pass("Clicked on docTypeTINCertificate", false);
+		return this;
+	}
 	public CorporateDocumentsPage enterDocumentId(String docid) throws Exception {
 		sendKeys(enterDocumentId, docid, WaitStrategry.PRESENCE, "enterDocumentId");
 		ExtentLogger.pass("Entered the enterDocumentId",true);
 		return this;
 	}
-	public CorporateDocumentsPage enterIssueDate(String docid) throws Exception {
-		sendKeys(enterIssueDate, docid, WaitStrategry.PRESENCE, "enterIssueDate");
+	public CorporateDocumentsPage enterIssueDate(String date) throws Exception {
+		//click(enterIssueDate, WaitStrategry.PRESENCE, "enterIssueDate");
+		sendKeys(enterIssueDate, date, WaitStrategry.PRESENCE, "enterIssueDate");
 		ExtentLogger.pass("Entered the enterIssueDate",true);
+		return this;
+	}
+	public CorporateDocumentsPage enterExpiryDate(String date1) throws Exception {
+		sendKeys(enterExpiryDate, date1, WaitStrategry.PRESENCE, "enterExpiryDate");
+		ExtentLogger.pass("Entered the enterExpiryDate",true);
 		return this;
 	}
 	public CorporateDocumentsPage enterIssueAuthority(String docid) throws Exception {

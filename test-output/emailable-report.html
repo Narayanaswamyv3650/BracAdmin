@@ -9,17 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">92,965</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">86,962</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.teqsar.test.AgentUserLoginTest</td><td><a href="#m0">agentUserLogin</a></td><td rowspan="1">1637925129523</td><td rowspan="1">86238</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.teqsar.test.AgentUserLoginTest</td><td><a href="#m0">agentUserLogin</a></td><td rowspan="1">1638426725592</td><td rowspan="1">79785</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.teqsar.test.AgentUserLoginTest#agentUserLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{menuname=, testdescription=agentUserLogin, count=1, browsertype=chrome, priority=1, execute=yes, version=, testName=agentUserLogin}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+<h2>Test</h2><h3 id="m0">com.teqsar.test.AgentUserLoginTest#agentUserLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{menuname=, testdescription=agentUserLogin, count=1, browsertype=chrome, priority=1, execute=yes, version=, testName=agentUserLogin}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:\Demo Automation\Frameworkselenium/src/test/resources/ExcelSheets/Document.JPG
   (Session info: chrome=96.0.4664.45)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-9APJJMU&apos;, ip: &apos;172.16.2.149&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Narayana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60506}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a9f4156c9fc95d45b260b007bccaab39
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Narayana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49245}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 09cb2e4b6542d2105113110a31c5e34e
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -28,9 +28,8 @@ Session ID: a9f4156c9fc95d45b260b007bccaab39
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at com.teqsar.pages.BasePage.sendKeys(BasePage.java:24)
-	at com.teqsar.pages.CorporateDocumentsPage.enterIssueDate(CorporateDocumentsPage.java:63)
-	at com.teqsar.test.AgentUserLoginTest.agentUserLogin(AgentUserLoginTest.java:80)
+	at com.teqsar.pages.CorporateDocumentsPage.passingdocuments(CorporateDocumentsPage.java:53)
+	at com.teqsar.test.AgentUserLoginTest.agentUserLogin(AgentUserLoginTest.java:76)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)

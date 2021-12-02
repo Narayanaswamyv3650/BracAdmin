@@ -129,13 +129,13 @@
                   </a> <!-- agentUserLogin({menuname=, testdescription=agentUserLogin, count=1, browsertype=chrome, priority=1, execute=yes, ve...) -->
                   <span class="method-name">agentUserLogin</span>
                   <span class="parameters">({menuname=, testdescription=agentUserLogin, count=1, browsertype=chrome, priority=1, execute=yes, version=, testName=agentUserLogin})</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:\Demo Automation\Frameworkselenium/src/test/resources/ExcelSheets/Document.JPG
   (Session info: chrome=96.0.4664.45)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-9APJJMU&apos;, ip: &apos;172.16.2.149&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Narayana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60506}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a9f4156c9fc95d45b260b007bccaab39
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Narayana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49245}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 09cb2e4b6542d2105113110a31c5e34e
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -144,9 +144,8 @@ Session ID: a9f4156c9fc95d45b260b007bccaab39
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at com.teqsar.pages.BasePage.sendKeys(BasePage.java:24)
-	at com.teqsar.pages.CorporateDocumentsPage.enterIssueDate(CorporateDocumentsPage.java:63)
-	at com.teqsar.test.AgentUserLoginTest.agentUserLogin(AgentUserLoginTest.java:80)
+	at com.teqsar.pages.CorporateDocumentsPage.passingdocuments(CorporateDocumentsPage.java:53)
+	at com.teqsar.test.AgentUserLoginTest.agentUserLogin(AgentUserLoginTest.java:76)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
@@ -219,7 +218,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'agentUserLogin')
 data.setCell(0, 2, 'com.teqsar.test.AgentUserLoginTest')
-data.setCell(0, 3, 86238);
+data.setCell(0, 3, 79785);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -259,11 +258,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">agentUserLogin({menuname=, testdescription=agentUserLogin, count=1, browsertype=chrome, priority=1, execute=yes, ve...)</span>
-                <span class="method-start">5922 ms</span>
+                <span class="method-start">6562 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">92368 ms</span>
+                <span class="method-start">86547 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

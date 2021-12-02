@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Nov 26 16:42:03 IST 2021</td>
+<td>Started on:</td><td>Thu Dec 02 12:01:58 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>92 seconds (92965 ms)</td>
+<tr><td>Total time:</td><td>86 seconds (86962 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.teqsar.test.AgentUserLoginTest.agentUserLogin()'><b>agentUserLogin</b><br>Test class: com.teqsar.test.AgentUserLoginTest<br>Parameters: {menuname=, testdescription=agentUserLogin, count=1, browsertype=chrome, priority=1, execute=yes, version=, testName=agentUserLogin}</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+<td><div><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:\Demo Automation\Frameworkselenium/src/test/resources/ExcelSheets/Document.JPG
   (Session info: chrome=96.0.4664.45)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-9APJJMU&apos;, ip: &apos;172.16.2.149&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Narayana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60506}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a9f4156c9fc95d45b260b007bccaab39
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Narayana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49245}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 09cb2e4b6542d2105113110a31c5e34e
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -91,23 +91,22 @@ Session ID: a9f4156c9fc95d45b260b007bccaab39
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at com.teqsar.pages.BasePage.sendKeys(BasePage.java:24)
-	at com.teqsar.pages.CorporateDocumentsPage.enterIssueDate(CorporateDocumentsPage.java:63)
-	at com.teqsar.test.AgentUserLoginTest.agentUserLogin(AgentUserLoginTest.java:80)
+	at com.teqsar.pages.CorporateDocumentsPage.passingdocuments(CorporateDocumentsPage.java:53)
+	at com.teqsar.test.AgentUserLoginTest.agentUserLogin(AgentUserLoginTest.java:76)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1265136522", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1265136522'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2139665131", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2139665131'><pre>org.openqa.selenium.InvalidArgumentException: invalid argument: File not found : D:\Demo Automation\Frameworkselenium/src/test/resources/ExcelSheets/Document.JPG
   (Session info: chrome=96.0.4664.45)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-9APJJMU&apos;, ip: &apos;172.16.2.149&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Narayana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60506}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a9f4156c9fc95d45b260b007bccaab39
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\Narayana\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49245}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 09cb2e4b6542d2105113110a31c5e34e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -121,9 +120,8 @@ Session ID: a9f4156c9fc95d45b260b007bccaab39
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
 	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at com.teqsar.pages.BasePage.sendKeys(BasePage.java:24)
-	at com.teqsar.pages.CorporateDocumentsPage.enterIssueDate(CorporateDocumentsPage.java:63)
-	at com.teqsar.test.AgentUserLoginTest.agentUserLogin(AgentUserLoginTest.java:80)
+	at com.teqsar.pages.CorporateDocumentsPage.passingdocuments(CorporateDocumentsPage.java:53)
+	at com.teqsar.test.AgentUserLoginTest.agentUserLogin(AgentUserLoginTest.java:76)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -140,7 +138,7 @@ Session ID: a9f4156c9fc95d45b260b007bccaab39
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
 </pre></div></td>
-<td>86</td>
+<td>79</td>
 <td>com.teqsar.test.AgentUserLoginTest@17fc391b</td></tr>
 </table><p>
 </body>

@@ -30,7 +30,7 @@ public final class FrameWorkConstants {
 	public static String getImagepath() {
 		return IMAGEPATH;
 	}
-	private static final String IMAGEPATH=RESOURCESPATH+"/ExcelSheets/Document.JPG";
+	private static final String IMAGEPATH=RESOURCESPATH+"/ExcelSheets/Document.png";
 	
 	private static final String RUNMANAGERSHEET="RUNMANAGER";
 	private static final String ITERATIONSHEET="RUNMANAGER";

@@ -78,7 +78,36 @@ public class AgentUserLoginTest extends BaseTest{
 		.docTypeNationalID()
 		.enterDocumentId(RandomUtils.generateDocumentNumber(10))
 		.enterIssueDate("26/11/2021")
-		.enterIssueAuthority("Government");
+		.enterIssueAuthority("Government")
+		.clickOnDocCheckBox()
+		.clickOnDocumentSubmit()
+		// Proof of Business
+		.clickProfofBusiness()
+		.clickOnaddDocuments()
+		.passingdocuments()
+		.documenType()
+		.docTypeTradeLicenceDoc()
+		.enterDocumentId(RandomUtils.generateDocumentNumber(10))
+		.enterIssueDate("26/11/2021")
+		.enterExpiryDate("26/11/2023")
+		.enterIssueAuthority("Government")
+		.clickOnDocCheckBox()
+		.clickOnDocumentSubmit()
+		
+		.clickOnaddDocuments()
+		.passingdocuments()
+		.documenType()
+		.docTypeTINCertificate()
+		.enterDocumentId(RandomUtils.generateDocumentNumber(12))
+		.enterIssueDate("26/11/2021")
+		.enterExpiryDate("26/11/2023")
+		.enterIssueAuthority("Government")
+		.clickOnDocCheckBox()
+		.clickOnDocumentSubmit();
+		
+	
+
+
 		//DriverManager.getDriver().quit();
 		
 	
